@@ -11,9 +11,10 @@ body
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: image 2s infinite alternate;
+    background-position: center;
 }
 .profile 
 {
@@ -104,15 +105,60 @@ body
    }
 
 }
-@keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+@keyframes image {
+  0% {
+    background-image: url('https://bloganh.net/wp-content/uploads/2020/07/luac-chon-background-phu-hop.jpg');
   }
+  100% {
+    background-image: url('https://studios.vn/wp-content/uploads/2017/05/bi-quyet-chup-anh-chan-dung-ngoai-troi-cho-nhiep-anh-gia-7.jpg');
+  }
+}
 
+// .hover__effect 
+// {
+//   background: #fff;
+//   padding: 10px;
+//   width: 200px;
+//   margin-left: 20px;
+//   transition: 0.4s;
+
+//   &:hover  .first__line 
+//   {
+//     transform: translateY(-15px);
+//   }
+//   &:hover  .second__line 
+//   {
+//     transform: translateY(15px);
+//   }
+//   .first__line 
+//   {
+//     background: #000;
+//     color: #fff;
+//     text-align: center;
+//     overflow: hidden;
+//     position: relative;
+//     transition: 0.4s;
+    
+//     padding: 10px;
+//     p 
+//     {
+//       margin-bottom: -20.5px;
+
+//     }
+//   }
+//   .second__line 
+//   {
+//     background: #000;
+//     color: #fff;
+//     text-align: center;
+//     overflow: hidden;
+//     transition: 0.4s;
+//     padding: 10px;
+//     p 
+//     {
+//       margin-top: -20.5px;
+      
+//     }
+//   }
+   
+// }

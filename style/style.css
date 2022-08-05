@@ -17,10 +17,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: image 2s infinite alternate;
+          animation: image 2s infinite alternate;
+  background-position: center;
 }
 
 .profile {
@@ -118,27 +119,21 @@ body {
   font-size: 18px;
 }
 
-@-webkit-keyframes gradient {
+@-webkit-keyframes image {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    background-image: url("https://bloganh.net/wp-content/uploads/2020/07/luac-chon-background-phu-hop.jpg");
   }
   100% {
-    background-position: 0% 50%;
+    background-image: url("https://studios.vn/wp-content/uploads/2017/05/bi-quyet-chup-anh-chan-dung-ngoai-troi-cho-nhiep-anh-gia-7.jpg");
   }
 }
 
-@keyframes gradient {
+@keyframes image {
   0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
+    background-image: url("https://bloganh.net/wp-content/uploads/2020/07/luac-chon-background-phu-hop.jpg");
   }
   100% {
-    background-position: 0% 50%;
+    background-image: url("https://studios.vn/wp-content/uploads/2017/05/bi-quyet-chup-anh-chan-dung-ngoai-troi-cho-nhiep-anh-gia-7.jpg");
   }
 }
 /*# sourceMappingURL=style.css.map */
