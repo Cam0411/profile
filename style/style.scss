@@ -13,7 +13,7 @@ body
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: image 2s infinite alternate;
+    animation: image 10s infinite alternate;
     background-position: center;
 }
 .profile 
@@ -74,7 +74,8 @@ body
         li 
         {
             width: 80%;
-            border: 2px dashed #fff;
+            border: 2px dashed #0004;
+            background: #0004;
             margin-bottom: 20px;
             padding: 10px 14px;
             list-style: none;
@@ -82,7 +83,7 @@ body
             margin-left: auto;
             margin-right: auto;
             display: flex;
-            border-radius: 15px 0px 15px 0px;
+            border-radius: 15px 5px 15px 5px;
             font-weight: 700;
             transition: 0.4s;
             position: relative;
@@ -107,13 +108,13 @@ body
 }
 @keyframes image {
   0% {
-    background-image: url('https://bloganh.net/wp-content/uploads/2020/07/luac-chon-background-phu-hop.jpg');
+    background-image: url('https://haycafe.vn/wp-content/uploads/2022/03/Background-anime-1.jpg');
+
   }
   100% {
-    background-image: url('https://studios.vn/wp-content/uploads/2017/05/bi-quyet-chup-anh-chan-dung-ngoai-troi-cho-nhiep-anh-gia-7.jpg');
+    background-image: url('https://anhdephd.vn/wp-content/uploads/2022/05/background-anime.jpg');
   }
 }
-
 // .hover__effect 
 // {
 //   background: #fff;
