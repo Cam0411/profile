@@ -15,10 +15,11 @@ body
     background-repeat: no-repeat;
     animation: image 10s infinite alternate;
     background-position: center;
+    padding: 10px 15px 10px 15px;
 }
 .profile 
 {
-    
+
     max-width: 500px;
     width: 100%;
     height: 100%;
@@ -29,6 +30,7 @@ body
     flex-direction: column;
     padding: 10px;
     position: relative;
+
     .header 
     {
      
@@ -59,50 +61,70 @@ body
     }
    .social__media 
    {
+    max-width: 300px;
     width: 100%;
-    margin-top: 20px;
-    .social 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    margin-top: 10px;
+
+   .social
+   {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    a 
     {
-     
-        a 
-        {
-            color: #fff;
-            margin-left: auto;
-            margin-right: auto;
-            text-decoration: none;
-        }
-        li 
-        {
-            width: 80%;
-            border: 2px dashed #0004;
-            background: #0004;
-            margin-bottom: 20px;
-            padding: 10px 14px;
-            list-style: none;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-            display: flex;
-            border-radius: 15px 5px 15px 5px;
-            font-weight: 700;
-            transition: 0.4s;
-            position: relative;
-            z-index: 1;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      
-         span 
-         {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-         }
-         i 
-         {
-            text-align: left;
-            font-size: 18px;
-         }
-        }
+      text-decoration: none;
     }
+    li 
+    {
+      width: 100px;
+      background: #fff;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      padding: 10px;
+      border-radius: 10px 0px 10px 0px;
+      margin: 10px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      i 
+      {
+        font-size: 50px;
+        color: #fff;
+        text-decoration: none;
+      }
+      
+    }
+    li.facebook 
+    {
+      background: #2d86ff;
+    }
+    li.github 
+    {
+      .github 
+      {
+        color: #000;
+      }
+    }
+    li.reddit 
+    {
+      background: #ff4500;
+    }
+    li.discord 
+    {
+      background: #5865f2;
+    }
+   }
    }
 
 }
@@ -111,55 +133,23 @@ body
     background-image: url('https://haycafe.vn/wp-content/uploads/2022/03/Background-anime-1.jpg');
 
   }
+  50% {
+    background-image: url('https://demoda.vn/wp-content/uploads/2022/02/background-anime-pc.jpg');
+  }
   100% {
     background-image: url('https://anhdephd.vn/wp-content/uploads/2022/05/background-anime.jpg');
   }
 }
-// .hover__effect 
-// {
-//   background: #fff;
-//   padding: 10px;
-//   width: 200px;
-//   margin-left: 20px;
-//   transition: 0.4s;
+.background 
+{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #0004;
+}
 
-//   &:hover  .first__line 
-//   {
-//     transform: translateY(-15px);
-//   }
-//   &:hover  .second__line 
-//   {
-//     transform: translateY(15px);
-//   }
-//   .first__line 
-//   {
-//     background: #000;
-//     color: #fff;
-//     text-align: center;
-//     overflow: hidden;
-//     position: relative;
-//     transition: 0.4s;
-    
-//     padding: 10px;
-//     p 
-//     {
-//       margin-bottom: -20.5px;
 
-//     }
-//   }
-//   .second__line 
-//   {
-//     background: #000;
-//     color: #fff;
-//     text-align: center;
-//     overflow: hidden;
-//     transition: 0.4s;
-//     padding: 10px;
-//     p 
-//     {
-//       margin-top: -20.5px;
-      
-//     }
-//   }
-   
-// }
+

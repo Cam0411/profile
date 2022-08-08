@@ -22,6 +22,7 @@ body {
   -webkit-animation: image 10s infinite alternate;
           animation: image 10s infinite alternate;
   background-position: center;
+  padding: 10px 15px 10px 15px;
 }
 
 .profile {
@@ -75,54 +76,93 @@ body {
 }
 
 .profile .social__media {
+  max-width: 300px;
   width: 100%;
-  margin-top: 20px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px 5px 10px 5px;
+  -webkit-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+          box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  margin-top: 10px;
+}
+
+.profile .social__media .social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
 }
 
 .profile .social__media .social a {
-  color: #fff;
-  margin-left: auto;
-  margin-right: auto;
   text-decoration: none;
 }
 
 .profile .social__media .social li {
-  width: 80%;
-  border: 2px dashed #0004;
-  background: #0004;
-  margin-bottom: 20px;
-  padding: 10px 14px;
-  list-style: none;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100px;
+  background: #fff;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 15px 5px 15px 5px;
-  font-weight: 700;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  position: relative;
-  z-index: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 10px;
+  border-radius: 10px 0px 10px 0px;
+  margin: 10px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.profile .social__media .social li span {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.profile .social__media .social li i {
+  font-size: 50px;
+  color: #fff;
+  text-decoration: none;
 }
 
-.profile .social__media .social li i {
-  text-align: left;
-  font-size: 18px;
+.profile .social__media .social li.facebook {
+  background: #2d86ff;
+}
+
+.profile .social__media .social li.github .github {
+  color: #000;
+}
+
+.profile .social__media .social li.reddit {
+  background: #ff4500;
+}
+
+.profile .social__media .social li.discord {
+  background: #5865f2;
 }
 
 @-webkit-keyframes image {
   0% {
     background-image: url("https://haycafe.vn/wp-content/uploads/2022/03/Background-anime-1.jpg");
+  }
+  50% {
+    background-image: url("https://demoda.vn/wp-content/uploads/2022/02/background-anime-pc.jpg");
   }
   100% {
     background-image: url("https://anhdephd.vn/wp-content/uploads/2022/05/background-anime.jpg");
@@ -133,8 +173,21 @@ body {
   0% {
     background-image: url("https://haycafe.vn/wp-content/uploads/2022/03/Background-anime-1.jpg");
   }
+  50% {
+    background-image: url("https://demoda.vn/wp-content/uploads/2022/02/background-anime-pc.jpg");
+  }
   100% {
     background-image: url("https://anhdephd.vn/wp-content/uploads/2022/05/background-anime.jpg");
   }
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #0004;
 }
 /*# sourceMappingURL=style.css.map */
