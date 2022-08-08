@@ -59,6 +59,7 @@ body {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  animation: animate-up 2s ease-in-out infinite alternate-reverse both;
 }
 
 .profile .header .title {
@@ -89,8 +90,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px 5px 10px 5px;
-  -webkit-box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
-          box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
   margin-top: 10px;
 }
 
@@ -131,8 +130,6 @@ body {
   padding: 10px;
   border-radius: 10px 0px 10px 0px;
   margin: 10px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .profile .social__media .social li i {
@@ -143,6 +140,13 @@ body {
 
 .profile .social__media .social li.facebook {
   background: #2d86ff;
+  -webkit-box-shadow: #4e69aa 0px 5px 15px;
+          box-shadow: #4e69aa 0px 5px 15px;
+}
+
+.profile .social__media .social li.github {
+  -webkit-box-shadow: #fff 0px 5px 15px;
+          box-shadow: #fff 0px 5px 15px;
 }
 
 .profile .social__media .social li.github .github {
@@ -151,10 +155,14 @@ body {
 
 .profile .social__media .social li.reddit {
   background: #ff4500;
+  -webkit-box-shadow: #ff4500 0px 5px 15px;
+          box-shadow: #ff4500 0px 5px 15px;
 }
 
 .profile .social__media .social li.discord {
   background: #5865f2;
+  -webkit-box-shadow: #5865f2 0px 5px 15px;
+          box-shadow: #5865f2 0px 5px 15px;
 }
 
 @-webkit-keyframes image {
@@ -189,5 +197,27 @@ body {
   bottom: 0;
   z-index: -1;
   background: #0004;
+}
+
+@-webkit-keyframes animate-up {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes animate-up {
+  0% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  100% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 /*# sourceMappingURL=style.css.map */
