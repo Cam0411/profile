@@ -29,7 +29,8 @@
        
       </div>
       <div class="share__button">
-        <i class="fa-solid fa-share-nodes"></i>
+        <i class="fa-solid fa-share"></i>
+      
       </div>
       <p class="url-text">url copied</p>
     </div>
@@ -63,9 +64,9 @@
       console.log(button);
       button.addEventListener('click',() => {
         copy()
-        url.style.opacity = 1
+        url.classList.add('add-ani')
         setTimeout(() => {
-          url.style.opacity = 0
+          url.classList.remove('add-ani')
         },1000)
       })
      </script>

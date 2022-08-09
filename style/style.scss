@@ -36,7 +36,7 @@ body
     flex-direction: column;
     padding: 10px;
     position: relative;
-  
+    overflow: hidden;
     .header 
     {
      
@@ -158,29 +158,38 @@ body
    .share__button 
    {
     position: absolute;
-    top: 5%;
+    top: 3%;
     left: 5%;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     i 
     {
       color: rgba(252, 37, 103, 1);
+      font-size: 20px;
     }
    }
    .url-text 
    {
     position: absolute;
-    top: 5%;
-    left: 14%;
+    top: 8%;
+    left: 0%;
     background: #fff;
     padding: 7px 12px;
     transition: 0.4s;
     opacity: 0;
+    animation: animated 0.4s ;
+    transform: translateX(-100%);
+   }
+   .add-ani
+   {
+    transform: translateX(0%);
+    opacity: 1;
    }
 }
 
