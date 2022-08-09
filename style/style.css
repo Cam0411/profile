@@ -19,8 +19,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  -webkit-animation: image 10s infinite alternate;
-          animation: image 10s infinite alternate;
+  background: radial-gradient(circle farthest-corner at 10.2% 55.8%, #fc2567 0%, #fa2697 46.2%, #ba08b5 90.1%);
   background-position: center;
   padding: 10px 15px 10px 15px;
 }
@@ -34,9 +33,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -51,6 +50,7 @@ body {
 .profile .header {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .profile .header .img__profile {
@@ -59,7 +59,6 @@ body {
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
-  animation: animate-up 2s ease-in-out infinite alternate-reverse both;
 }
 
 .profile .header .title {
@@ -78,9 +77,7 @@ body {
 }
 
 .profile .social__media {
-  max-width: 260px;
   width: 100%;
-  height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,27 +88,13 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   border-radius: 10px 5px 10px 5px;
-  -webkit-box-shadow: rgba(46, 124, 240, 0.4) -5px 5px, rgba(82, 46, 240, 0.3) -10px 10px, rgba(46, 65, 240, 0.2) -15px 15px, rgba(114, 46, 240, 0.096) -20px 20px, rgba(104, 46, 240, 0.05) -25px 25px;
-          box-shadow: rgba(46, 124, 240, 0.4) -5px 5px, rgba(82, 46, 240, 0.3) -10px 10px, rgba(46, 65, 240, 0.2) -15px 15px, rgba(114, 46, 240, 0.096) -20px 20px, rgba(104, 46, 240, 0.05) -25px 25px;
   padding-top: 5px;
   padding-bottom: 5px;
-  overflow-y: scroll;
 }
 
 .profile .social__media .social {
   width: 100%;
   height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 10px;
 }
 
@@ -120,9 +103,9 @@ body {
 }
 
 .profile .social__media .social li {
-  width: 100px;
+  width: 100%;
   background: #fff;
-  height: 100px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,10 +118,14 @@ body {
   list-style: none;
   border-radius: 10px 0px 10px 0px;
   margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .profile .social__media .social li i {
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   text-decoration: none;
 }
@@ -184,66 +171,6 @@ body {
 
 .profile .social__media .social li.zalo p {
   color: #fff;
-  font-size: 30px;
-}
-
-@-webkit-keyframes image {
-  0% {
-    background-image: url("https://haycafe.vn/wp-content/uploads/2022/03/Background-anime-1.jpg");
-  }
-  50% {
-    background-image: url("https://demoda.vn/wp-content/uploads/2022/02/background-anime-pc.jpg");
-  }
-  100% {
-    background-image: url("https://anhdephd.vn/wp-content/uploads/2022/05/background-anime.jpg");
-  }
-}
-
-@keyframes image {
-  0% {
-    background-image: url("https://haycafe.vn/wp-content/uploads/2022/03/Background-anime-1.jpg");
-  }
-  50% {
-    background-image: url("https://demoda.vn/wp-content/uploads/2022/02/background-anime-pc.jpg");
-  }
-  100% {
-    background-image: url("https://anhdephd.vn/wp-content/uploads/2022/05/background-anime.jpg");
-  }
-}
-
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: #0004;
-}
-
-@-webkit-keyframes animate-up {
-  0% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-}
-
-@keyframes animate-up {
-  0% {
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  100% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px);
-  }
-}
-
-::-webkit-scrollbar {
-  width: 0px;
+  font-size: 25px;
 }
 /*# sourceMappingURL=style.css.map */
