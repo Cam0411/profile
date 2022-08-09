@@ -158,10 +158,10 @@ body
    .share__button 
    {
     position: absolute;
-    top: 3%;
-    left: 5%;
-    width: 40px;
-    height: 40px;
+    top: 2%;
+    left: 1%;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background: #fff;
     display: flex;
@@ -177,18 +177,19 @@ body
    .url-text 
    {
     position: absolute;
-    top: 8%;
-    left: 0%;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #fff;
     padding: 7px 12px;
-    transition: 0.4s;
     opacity: 0;
-    animation: animated 0.4s ;
-    transform: translateX(-100%);
+    transition: 0.4s;
+    transform: translateY(-110%);
    }
    .add-ani
    {
-    transform: translateX(0%);
+    transform: translateY(0%);
+    transform: translateX(-50%);
     opacity: 1;
    }
 }

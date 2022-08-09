@@ -161,10 +161,10 @@ body {
 
 .profile .share__button {
   position: absolute;
-  top: 3%;
-  left: 5%;
-  width: 40px;
-  height: 40px;
+  top: 2%;
+  left: 1%;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: #fff;
   display: -webkit-box;
@@ -186,22 +186,24 @@ body {
 
 .profile .url-text {
   position: absolute;
-  top: 8%;
-  left: 0%;
+  top: 1%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: #fff;
   padding: 7px 12px;
+  opacity: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  opacity: 0;
-  -webkit-animation: animated 0.4s;
-          animation: animated 0.4s;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
 }
 
 .profile .add-ani {
-  -webkit-transform: translateX(0%);
-          transform: translateX(0%);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
