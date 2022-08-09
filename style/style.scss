@@ -155,6 +155,22 @@ body
     }
    }
    }
-
+   .share__button 
+   {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i 
+    {
+      color: rgba(252, 37, 103, 1);
+    }
+   }
 }
 

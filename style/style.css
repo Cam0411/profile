@@ -157,4 +157,27 @@ body {
   color: #fff;
   font-size: 25px;
 }
+
+.profile .share__button {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .share__button i {
+  color: #fc2567;
+}
 /*# sourceMappingURL=style.css.map */

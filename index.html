@@ -28,10 +28,13 @@
           </ul>
        
       </div>
+      <div class="share__button">
+        <i class="fa-solid fa-share-nodes"></i>
+      </div>
     </div>
     <div class="background"></div>
 
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed('.anim', {
@@ -48,6 +51,18 @@
       });
   
     </script>
- 
+    
+     <script>
+       var $temp = $("<input>");
+       var $url = $(location).attr('href');
+
+       $('.share-button').on('click', function() {
+       $("body").append($temp);
+       $temp.val($url).select();
+       document.execCommand("copy");
+       $temp.remove();
+       })
+    
+     </script>
 </body>
 </html>
