@@ -31,6 +31,7 @@
       <div class="share__button">
         <i class="fa-solid fa-share-nodes"></i>
       </div>
+      <p class="url-text">url copied</p>
     </div>
     <div class="background"></div>
 
@@ -58,9 +59,14 @@
         navigator.clipboard.writeText('https://cam0411.github.io/profile/')
       }
       const button = document.querySelector('.share__button')
+      const url = document.querySelector('.url-text')
       console.log(button);
       button.addEventListener('click',() => {
         copy()
+        url.style.opacity = 1
+        setTimeout(() => {
+          url.style.opacity = 0
+        },1000)
       })
      </script>
 </body>

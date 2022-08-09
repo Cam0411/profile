@@ -180,4 +180,15 @@ body {
 .profile .share__button i {
   color: #fc2567;
 }
+
+.profile .url-text {
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  background: #fff;
+  padding: 7px 12px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+}
 /*# sourceMappingURL=style.css.map */

@@ -172,5 +172,15 @@ body
       color: rgba(252, 37, 103, 1);
     }
    }
+   .url-text 
+   {
+    position: absolute;
+    top: 5%;
+    left: 14%;
+    background: #fff;
+    padding: 7px 12px;
+    transition: 0.4s;
+    opacity: 0;
+   }
 }
 
