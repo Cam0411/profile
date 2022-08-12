@@ -207,7 +207,6 @@ body {
 
 .profile .url-text {
   position: absolute;
-  font-family: 'Roboto', sans-serif;
   top: 0%;
   margin-left: auto;
   margin-right: auto;
@@ -216,6 +215,7 @@ body {
   opacity: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  font-family: 'Roboto', sans-serif;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
@@ -248,5 +248,13 @@ body {
   100% {
     background-image: url("https://www.teahub.io/photos/full/38-383062_1920x1080-amazing-sunset-above-the-city-wallpaper-anime.jpg");
   }
+}
+
+video {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
