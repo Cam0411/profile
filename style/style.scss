@@ -117,7 +117,8 @@ body
       margin-top: 20px;
       padding: 10px 12px;
       font-family: sans-serif;
-      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
       i 
       {
         font-size: 40px;
@@ -129,8 +130,6 @@ body
     li.facebook 
     {
       background: #2d86ff;
-    
-      
     }
     li.github 
     {
@@ -225,3 +224,70 @@ body
     background-image: url('https://www.teahub.io/photos/full/38-383062_1920x1080-amazing-sunset-above-the-city-wallpaper-anime.jpg');
   }
 }
+.music__feature
+{
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  i 
+  {
+    color: rgba(252, 37, 103, 1);
+    font-size: 20px;
+  }
+}
+
+.modal 
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 20%;
+  transition: 0.4s;
+  transform: translateY(180%);
+  .content__modal
+  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    
+  }
+}
+.add__music
+{
+  transform: translateY(0);
+}
+.music__play 
+{
+  max-width: 500px;
+  width: 100%;
+}
+.ani__dics 
+{
+  animation: 20s animation infinite alternate;
+}
+@keyframes animation {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
