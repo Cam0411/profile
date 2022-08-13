@@ -286,8 +286,8 @@ body {
   height: 10%;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  -webkit-transform: translateY(180%);
-          transform: translateY(180%);
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
 }
 
 .modal .content__modal {
