@@ -5,19 +5,7 @@ const music__audio = document.querySelector('.music__play')
 const dics = document.querySelector('.dics ')
 function app(){
   music.addEventListener('click',() => {
-      modal.classList.add('add__music')
-  })
-  music.addEventListener('click',(e) => {
-     e.stopPropagation()
-  })
-  content__modal.addEventListener("click", function(event){
-     event.stopPropagation()
-  });
-  modal.addEventListener('click',() => {
-    modal.classList.remove('add__music')
-  })
-  document.querySelector('body').addEventListener('click',() => {
-    modal.classList.remove('add__music')
+      modal.classList.toggle('add__music')
   })
 }
 console.log(music__audio);
