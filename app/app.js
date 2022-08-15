@@ -1,3 +1,4 @@
+
 $(function () {
   var playerTrack = $("#player-track"),
     bgArtwork = $("#bg-artwork"),
@@ -32,24 +33,24 @@ $(function () {
     albums = [
       "Dawn",
       "Me & You",
-      "Electro Boy",
+      "Memory Lane",
       "Home",
-      "Proxy (Original Mix)"
+      "Symbolism pt. III"
     ],
     trackNames = [
       "Skylike - Dawn",
       "Alex Skrindo - Me & You",
-      "Kaaze - Electro Boy",
+      "Tobu - Memory Lane",
       "Jordan Schor - Home",
-      "Martin Garrix - Proxy"
+      "Electro-Light - Symbolism"
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
       "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/2.mp3",
       "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/3.mp3",
+      "https://github.com/Cam0411/music/blob/main/Tobu%20-%20Memory%20Lane%20%5BNCS%20Release%5D.mp3?raw=true",
       "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/5.mp3"
+      "https://github.com/Cam0411/music/blob/main/Electro-Light%20-%20Symbolism%20pt.%20III%20%5BNCS%20Release%5D.mp3?raw=true"
     ],
     playPreviousTrackButton = $("#play-previous"),
     playNextTrackButton = $("#play-next"),
