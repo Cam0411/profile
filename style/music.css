@@ -4,6 +4,8 @@
   * 
   {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding:0 ;
   }
   
   
@@ -254,7 +256,6 @@
   }
   
   .button {
-    width: 26px;
     height: 26px;
     padding: 25px;
     background-color: #fff;
@@ -278,4 +279,7 @@
     transition: 0.2s ease all;
   }
   
-  
+  #play-next .button
+  {
+    margin: 0px;
+  }
