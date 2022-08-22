@@ -19,6 +19,7 @@ body
     //   rgba(250, 38, 151, 1) 46.2%,
     //   rgba(186, 8, 181, 1) 90.1%
     // );
+    background-image: url('https://scontent.fsgn8-3.fna.fbcdn.net/v/t39.30808-6/299477186_3431906883796228_8105750569664185345_n.jpg?stp=cp1_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=e3f864&_nc_ohc=iW8j0Pqx6D8AX-x0VlC&tn=q6C3-maM-d2sZBGh&_nc_ht=scontent.fsgn8-3.fna&oh=00_AT8g7n9Thd8zSgWveCwUjMqyDRkcZwBcNGAG-FSoinmixA&oe=6307896C');
     animation: animated 10s infinite alternate-reverse;
     background-position: center;
     padding: 10px 15px 10px 15px;
@@ -187,7 +188,7 @@ body
     cursor: pointer;
     i 
     {
-      color: rgba(252, 37, 103, 1);
+
       font-size: 20px;
     }
    }
@@ -213,17 +214,7 @@ body
    }
 }
 
-@keyframes animated {
-  0% {
-    background-image: url('https://i.pinimg.com/originals/c3/76/47/c37647d3cd724c0dc86a7db7627eaba5.jpg');
-  }
-  50% {
-    background-position: url('https://i.pinimg.com/originals/16/65/a7/1665a7ae96ba9e767182d472c8f4f52e.jpg');
-  }
-  100% {
-    background-image: url('https://www.teahub.io/photos/full/38-383062_1920x1080-amazing-sunset-above-the-city-wallpaper-anime.jpg');
-  }
-}
+
 .music__feature
 {
   position: absolute;
@@ -240,7 +231,7 @@ body
   cursor: pointer;
   i 
   {
-    color: rgba(252, 37, 103, 1);
+
     font-size: 20px;
   }
 }
