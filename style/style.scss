@@ -197,13 +197,12 @@ body
     opacity: 0;
     transition: 0.4s;
     font-family: 'Roboto', sans-serif;
-    transform: translateY(-100%);
+    transform: translateY(-60%);
    
    }
    .add-ani
    {
     transform: translateY(0%);
-
     opacity: 1;
    }
 }
