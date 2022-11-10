@@ -15,23 +15,78 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url("j.JPG");
-  animation: animated 10s infinite alternate-reverse;
-  background-position: center;
   padding: 10px 15px 10px 15px;
   min-height: 50vh;
+}
+
+.background__change-color {
+  height: 100vh;
+  position: absolute;
+  z-index: -9999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.background__change-color .bgn {
+  border-radius: 50%;
+  -webkit-animation: gradient 4s infinite;
+          animation: gradient 4s infinite;
+}
+
+.background__change-color .bgn:nth-child(1) {
+  height: 90%;
+  width: 85%;
+  position: absolute;
+  left: -20%;
+  top: -10%;
+  background: #00FFD1;
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
+}
+
+.background__change-color .bgn:nth-child(2) {
+  height: 80%;
+  width: 75%;
+  position: absolute;
+  right: -12%;
+  top: -12%;
+  background: #31C6D4;
+}
+
+.background__change-color .bgn:nth-child(3) {
+  height: 65%;
+  width: 80%;
+  position: absolute;
+  bottom: -15%;
+  right: -20%;
+  background: #FFFF00;
+}
+
+.background__change-color .bgn:nth-child(4) {
+  height: 50%;
+  width: 75%;
+  background: #FF1E1E;
+  position: absolute;
+  bottom: -10%;
+  left: -18%;
+}
+
+.background__change-color::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backdrop-filter: blur(120px);
+          backdrop-filter: blur(120px);
 }
 
 .profile {
   max-width: 500px;
   min-height: 100vh;
   width: 100%;
-  -webkit-box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +109,7 @@ body {
   text-align: center;
   margin-bottom: 0px;
   margin-top: 40px;
+  z-index: 9999;
 }
 
 .profile .header .img__profile {
@@ -150,6 +206,8 @@ body {
 
 .profile .social__media .social li.facebook {
   background: #2d86ff;
+  -webkit-animation: 0.9s changecolorButton infinite alternate;
+          animation: 0.9s changecolorButton infinite alternate;
 }
 
 .profile .social__media .social li.github .github {
@@ -184,7 +242,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
+  background: #6C4AB6;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: -webkit-box;
@@ -201,6 +259,7 @@ body {
 
 .profile .share__button i {
   font-size: 20px;
+  color: #fff;
 }
 
 .profile .url-text {
@@ -231,7 +290,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
+  background: #1ed760;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: -webkit-box;
@@ -248,6 +307,7 @@ body {
 
 .music__feature i {
   font-size: 20px;
+  color: #fff;
 }
 
 .modal {
@@ -318,6 +378,20 @@ body {
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes gradient {
+  70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes gradient {
+  70% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 /*# sourceMappingURL=style.css.map */

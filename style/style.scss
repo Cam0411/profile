@@ -11,13 +11,65 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('j.JPG');
-    animation: animated 10s infinite alternate-reverse;
-    background-position: center;
     padding: 10px 15px 10px 15px;
     min-height: 50vh;
+}
+.background__change-color
+{
+  height: 100vh;
+  position: absolute;
+  z-index: -9999999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  .bgn
+  {
+    border-radius: 50%;
+    animation:  gradient 4s infinite;
+  }
+  .bgn:nth-child(1){
+    height: 90%;
+    width: 85%;
+    position: absolute;
+    left: -20%;
+    top: -10%;
+    background: #00FFD1;
+    backdrop-filter: blur(80px);
+  }
+  .bgn:nth-child(2){
+    height: 80%;
+    width: 75%;
+    position: absolute;
+    right: -12%;
+    top: -12%;
+    background: #31C6D4;
+  }
+  .bgn:nth-child(3){
+    height: 65%;
+    width: 80%;
+    position: absolute;
+    bottom: -15%;
+    right: -20%;
+    background: #FFFF00;
+  }
+  .bgn:nth-child(4){
+    height: 50%;
+    width: 75%;
+    background: #FF1E1E;
+    position: absolute;
+    bottom: -10%;
+    left: -18%;
+  }
+}
+.background__change-color::after
+{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: blur(120px); 
 }
 .profile 
 {
@@ -25,8 +77,6 @@ body
     max-width: 500px;
     min-height: 100vh;
     width: 100%;
-    box-shadow: 0 50px 50px rgba(0,0,0,0.5);
-    backdrop-filter: blur(5px);
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -40,6 +90,7 @@ body
         text-align: center;
         margin-bottom: 0px;
         margin-top: 40px;
+        z-index: 9999;
         .img__profile 
         {
           width: 90px;
@@ -125,6 +176,7 @@ body
     li.facebook 
     {
       background: #2d86ff;
+      animation: 0.9s changecolorButton infinite alternate ;
     }
     li.github 
     {
@@ -174,7 +226,7 @@ body
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #fff;
+    background: #6C4AB6;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     justify-content: center;
@@ -184,6 +236,7 @@ body
     {
 
       font-size: 20px;
+      color: #fff;
     }
    }
    .url-text 
@@ -216,16 +269,18 @@ body
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #fff;
+  background: #1ed760;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
+ 
   cursor: pointer;
   i 
   {
 
     font-size: 20px;
+    color: #fff;
   }
 }
 
@@ -275,3 +330,8 @@ body
   }
 }
 
+@keyframes gradient {
+  70%{
+    transform: scale(1.2);
+  }
+}
