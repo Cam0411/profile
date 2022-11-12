@@ -17,12 +17,13 @@ body {
           align-items: center;
   padding: 10px 15px 10px 15px;
   min-height: 50vh;
+  overflow-y: scroll;
 }
 
 .background__change-color {
-  height: 100vh;
+  height: 120vh;
   position: absolute;
-  z-index: -9999999;
+  z-index: -9;
   top: 0;
   left: 0;
   right: 0;
@@ -42,9 +43,7 @@ body {
   position: absolute;
   left: -20%;
   top: -10%;
-  background: #00FFD1;
-  -webkit-backdrop-filter: blur(80px);
-          backdrop-filter: blur(80px);
+  background: #1D1CE5;
 }
 
 .background__change-color .bgn:nth-child(2) {
@@ -53,22 +52,22 @@ body {
   position: absolute;
   right: -12%;
   top: -12%;
-  background: #31C6D4;
+  background: #4649FF;
 }
 
 .background__change-color .bgn:nth-child(3) {
-  height: 65%;
+  height: 75%;
   width: 80%;
   position: absolute;
   bottom: -15%;
   right: -20%;
-  background: #FFFF00;
+  background: #7978FF;
 }
 
 .background__change-color .bgn:nth-child(4) {
-  height: 50%;
+  height: 60%;
   width: 75%;
-  background: #FF1E1E;
+  background: #C47AFF;
   position: absolute;
   bottom: -10%;
   left: -18%;
@@ -79,8 +78,8 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(120px);
-          backdrop-filter: blur(120px);
+  -webkit-backdrop-filter: blur(80px);
+          backdrop-filter: blur(80px);
 }
 
 .profile {
@@ -206,8 +205,6 @@ body {
 
 .profile .social__media .social li.facebook {
   background: #2d86ff;
-  -webkit-animation: 0.9s changecolorButton infinite alternate;
-          animation: 0.9s changecolorButton infinite alternate;
 }
 
 .profile .social__media .social li.github .github {
@@ -383,15 +380,15 @@ body {
 
 @-webkit-keyframes gradient {
   70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.2) translate(50px);
+            transform: scale(1.2) translate(50px);
   }
 }
 
 @keyframes gradient {
   70% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    -webkit-transform: scale(1.2) translate(50px);
+            transform: scale(1.2) translate(50px);
   }
 }
 /*# sourceMappingURL=style.css.map */
