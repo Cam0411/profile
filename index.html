@@ -14,13 +14,15 @@
 </head>
 <body>
    <div class="background__change-color">
-    <div class="bgn"></div>
+    <div class="bgn "></div>
     <div class="bgn"></div>
     <div class="bgn"></div>
     <div class="bgn"></div>
    </div>
     <div class="profile">
       <div class="shooting__star">
+        <p class="star"></p>
+        <p class="star"></p>
         <p class="star"></p>
         <p class="star"></p>
         <p class="star"></p>
@@ -40,12 +42,12 @@
     </div>
       <div class="social__media">
          <ul class="social">
-            <a href="https://www.facebook.com/profile.php?id=100009308517792"> <li class="facebook"><i class="fa-brands fa-facebook-f"></i>  </li></a>
-            <a href="https://github.com/Cam0411"><li class="github"><i class="github fa-brands fa-github"> </i> </li></a>
-            <a href="https://www.reddit.com/user/Dizzy-Introduction78"><li class="reddit"><i class="fa-brands fa-reddit-alien"></i> </li></a>
-            <a href="https://dsc.bio/cam"><li class="discord"><i class="fa-brands fa-discord"></i>  </li></a>
-            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fchannel%2FUCmudOtWk4arbqrnpZS36dUg%3Ffbclid%3DIwAR3iIISnD7KBtby8TKJk7k4NH4pcxDm3qZ8V-FVw71EWNntJrQ9G4evieIc&h=AT075OuRHuCYHlQ1RQ9BUrhrROvGMBKj-3ol53dnQXL143wPMzHxkdct5l7J__wvxqSAJm5Wj0BBAO5lUeK0BKcERIjaqgOimkpdU7jcJ58gDuO7zMxSdKjj7e-yqsVjpv41ZA"><li class="youtube"><i class="fa-brands fa-youtube"></i> </li></a>
-            <a href="https://zalo.me/0937369283"><li class="zalo"><p>Zalo</p></li></a>
+            <a href="https://www.facebook.com/profile.php?id=100009308517792"> <li class="facebook animation"><i class="fa-brands fa-facebook-f"></i>  </li></a>
+            <a href="https://github.com/Cam0411"><li class="github animation"><i class="github fa-brands fa-github"> </i> </li></a>
+            <a href="https://www.reddit.com/user/Dizzy-Introduction78"><li class="reddit animation"><i class="fa-brands fa-reddit-alien"></i> </li></a>
+            <a href="https://dsc.bio/cam"><li class="discord animation"><i class="fa-brands fa-discord"></i>  </li></a>
+            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fyoutube.com%2Fchannel%2FUCmudOtWk4arbqrnpZS36dUg%3Ffbclid%3DIwAR3iIISnD7KBtby8TKJk7k4NH4pcxDm3qZ8V-FVw71EWNntJrQ9G4evieIc&h=AT075OuRHuCYHlQ1RQ9BUrhrROvGMBKj-3ol53dnQXL143wPMzHxkdct5l7J__wvxqSAJm5Wj0BBAO5lUeK0BKcERIjaqgOimkpdU7jcJ58gDuO7zMxSdKjj7e-yqsVjpv41ZA"><li class="youtube animation"><i class="fa-brands fa-youtube"></i> </li></a>
+            <a href="https://zalo.me/0937369283"><li class="zalo animation"><p>Zalo</p></li></a>
     
           </ul>
        
@@ -110,9 +112,42 @@
       </div>
      </div>
     <div class="background"></div>
+     <div class="loading__page">
+      <div class="mesh-loader">
+        <div class="set-one">
+            <div class="circle"></div>
+            <div class="circle"></div>
 
+        </div>
+        <div class="set-two">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
    
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    </div>  
+    <div class="mesh-loader__2">
+      <div class="set-one">
+          <div class="circle"></div>
+          <div class="circle"></div>
+
+      </div>
+      <div class="set-two">
+          <div class="circle"></div>
+          <div class="circle"></div>
+      </div>
+ 
+  </div>     
+      </div>
+
+       </div>
+     </div>
+   
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+
+   </script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var typed = new Typed('.anim', {
       strings: [
@@ -142,8 +177,17 @@
         },1000)
       })
      </script>
+     
+
      <script src="app/main.js"></script>
+ 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script type="text/javascript">
+      setTimeout(function(){
+      $('.loading__page').fadeToggle();
+      },3000)
+      
+    </script>
      <script src="app/app.js"></script>
 </body>
 </html>
