@@ -26,22 +26,24 @@ body
   right: 0;
   bottom: 0;
   overflow: hidden;
+  
   .bgn
   {
     border-radius: 50%;
-    animation:  gradient 10s infinite;
+    animation:  gradient 2.5s infinite alternate-reverse;
   }
   .bgn:nth-child(1){
     height: 90%;
-    width: 85%;
+    width: 98%;
     position: absolute;
     left: -20%;
     top: -10%;
     background: #1D1CE5;
+
   }
   .bgn:nth-child(2){
     height: 80%;
-    width: 75%;
+    width: 60%;
     position: absolute;
     right: -12%;
     top: -12%;
@@ -72,11 +74,7 @@ body
   width: 100%;
   backdrop-filter: blur(80px); 
 }
-@keyframes gradient {
-  70%{
-    transform: translateY(-80px);
-  }
-}
+
 .profile 
 {
  
@@ -180,11 +178,13 @@ body
       }
       
     }
+
     li.facebook 
     {
       background: #2d86ff;
-     
+      box-shadow: 0 0 10px 0 #2d86ff inset, 0 0 20px 2px #2d86ff;
     }
+
     li.github 
     {
  
@@ -192,30 +192,30 @@ body
       .github 
       {
         color: #000;
-
+      
       }
     }
     li.reddit 
     {
       background: #ff4500;
-  
+      box-shadow: 0 0 10px 0 #ff4500 inset, 0 0 20px 2px #ff4500;
 
     }
     li.discord 
     {
       background: #5865f2;
-     
+      box-shadow: 0 0 10px 0 #5865f2 inset, 0 0 20px 2px #5865f2;
 
     }
     li.youtube 
     {
       background: #f80101;
-     
+      box-shadow: 0 0 10px 0 #f80101 inset, 0 0 20px 2px #f80101;
     }
     li.zalo 
     {
       background: #0573ff;
-   
+      box-shadow: 0 0 10px 0 #0573ff inset, 0 0 20px 2px #0573ff;
 
       p 
       {
@@ -474,4 +474,11 @@ animation-delay: 0s;
   }
 }
 
+}
+@keyframes gradient {
+  from{
+    transform: scale(1.0);
+  }to {
+    transform: scale(1.3);
+  }
 }
