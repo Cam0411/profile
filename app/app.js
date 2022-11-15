@@ -31,23 +31,23 @@ $(function () {
     buffInterval = null,
     tFlag = false,
     albums = [
-      "Dawn",
-      "Me & You",
+      "Vô Lượng",
+      "Ái Nộ ",
       "Memory Lane",
       "Home",
       "Symbolism pt. III"
     ],
     trackNames = [
-      "Skylike - Dawn",
-      "Alex Skrindo - Me & You",
+      " Masew, Khôi Vũ",
+      "Masew, Khôi Vũ",
       "Tobu - Memory Lane",
       "Jordan Schor - Home",
       "Electro-Light - Symbolism"
     ],
     albumArtworks = ["_1", "_2", "_3", "_4", "_5"],
     trackUrl = [
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/2.mp3",
-      "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/1.mp3",
+      "https://github.com/Cam0411/music/blob/main/VoLuongTrichChuDaiBi-MasewKhoiVu-8113964.mp3?raw=true",
+      " https://github.com/Cam0411/music/blob/main/AiNo1-MasewKhoiVu-7078913.mp3?raw=true",
       "https://github.com/Cam0411/music/blob/main/Tobu%20-%20Memory%20Lane%20%5BNCS%20Release%5D.mp3?raw=true",
       "https://raw.githubusercontent.com/himalayasingh/music-player-1/master/music/4.mp3",
       "https://github.com/Cam0411/music/blob/main/Electro-Light%20-%20Symbolism%20pt.%20III%20%5BNCS%20Release%5D.mp3?raw=true"
